@@ -72,7 +72,7 @@ html {
 }
 
 #header{
-    height: 46.5px;
+    height: 47px;
     background-color: rgb(22, 129, 129);
     position: fixed;
     top: 0;
@@ -136,9 +136,27 @@ html {
     line-height: 38px;
 }
 
+#header .mobile-menu-button:hover{
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+#header .mobile-menu-button:hover .menu-icon{
+    color: rgb(0, 0, 0);
+}
+
 #header .search-button:hover{
     background-color: rgb(128, 230, 12);
     cursor: pointer;
+}
+
+#header .mobile-menu-button{
+    float: right;
+    line-height: 46.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
 }
 
 #header .search-button{
@@ -147,6 +165,7 @@ html {
     
 }
 
+#header .menu-icon,
 #header .search-icon{
     color: white;
     font-size: 20px;
@@ -276,7 +295,7 @@ html {
 }
 
 .places-list{
-    margin-top: 32px;
+    margin-top: 16px;
     overflow: hidden;
     margin-left: -8px;
     margin-right: -8px;
